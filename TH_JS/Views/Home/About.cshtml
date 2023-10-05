@@ -1,0 +1,23 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+<script src="~/Scripts/MyJS/showDate.js"></script>
+<h2>Thực hành Javascript</h2>
+<script>
+    //var hoten = prompt("Nhập họ tên:");
+    //var tuoi = prompt("Nhập tuổi:");
+    //document.writeln("Xin chào bạn:" + "<h2>" + hoten+ "</h2>");
+    //document.writeln("Tuổi của bạn là:" + "<b>" + tuoi + "</b>");
+
+    function HienThi(ten, tuoi) {
+        //alert("Xin chào: " + ten + ", tuổi của bạn là:" + tuoi );
+        document.writeln("Xin chào bạn:" + "<h2>" + ten + "</h2>");
+        document.writeln("Tuổi của bạn là:" + "<b>" + tuoi + "</b>");
+    }
+</script>
+<form>
+    <label>Họ tên</label><input type="text" name="txtName"/>
+    <label>Tuổi</label><input type="text" name="txtTuoi"/>
+    <input  type="button" value="Gửi" onclick="HienThi(txtName.value, txtTuoi.value)"/>
+</form>
+<input  type="button" value="Hôm nay" onclick="HienThiNgay()"/>

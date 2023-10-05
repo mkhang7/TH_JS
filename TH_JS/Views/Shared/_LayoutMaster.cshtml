@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/MyCSS/myStyle.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="div-top">
+        <ul class="fm-menu">
+            <li><a href="Product" class="fm-link-menu-tenshop" id="fm-tenshop">Túi sách nhập khẩu HC</a> </li>
+            <li><a href="Product" class="fm-link-menu">Product</a></li>
+            <li><a href="Contact" class="fm-link-menu">Contact</a></li>
+            <li><a href="About" class="fm-link-menu">About</a></li>
+        </ul>
+    </div>
+    <div id="div-left">
+        <marquee direction="right">
+            Túi sách nhập khẩu HC
+            <img src="~/Content/Images/balo-mwc.jpg" class="fm-img-lefl" />
+        </marquee>
+    </div>
+    <div id="div-content">
+        @RenderBody()
+    </div>
+    <div id="div-footer">
+        <address>
+            <p>Balo MWC</p>
+            <p>Địa chỉ</p>
+            <p>Facebook</p>
+        </address>
+    </div>
+</body>
+</html>
